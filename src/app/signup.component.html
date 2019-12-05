@@ -1,8 +1,7 @@
 <form [formGroup]="form" (ngSubmit)="onSignup()">
     <div class="form-group">
         <label for="username">Username</label>
-        <input  type="text" class="form-control"
-        formControlName="username">
+        <input  type="text" class="form-control" formControlName="username">
         <div *ngIf="form.controls.username.touched && 
         !form.controls.username.valid" class="alert alert-danger">
         Username is Required

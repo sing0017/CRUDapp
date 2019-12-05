@@ -7,8 +7,7 @@ import {LoginService} from './login.service';
 interface User{
     name : string;
     email: string;
-    image_url: string;
-}
+ }
 @Component({
     selector:'users',
     templateUrl:'./user.component.html'

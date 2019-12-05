@@ -48,7 +48,7 @@ export class LoginService {
             authState => {
                 console.log("signup-then", authState);  
                 this.loggedIn.next(true);   
-                this.loggedInUser =authState.user.uid;                               
+                this.loggedInUser = authState.user.uid;                               
                 this.router.navigate(['/']);
             }
         )
